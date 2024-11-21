@@ -1,0 +1,94 @@
+.condition{
+    width: 100%;
+    padding: 100px 0;
+    background-image: url("../../assets/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.condition::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 281px;
+    background: #000000;
+    z-index: 0;
+    opacity: 0.6;
+  }
+  .condition .condition_text{
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+  }
+  .condition .condition_text h1{
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+  .condition .condition_text .anchor span,
+  .condition .condition_text .anchor a{
+    font-size: 20px;
+    color: #fff;
+  }
+
+ .conditions_content .content{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+ .conditions_content .text h2{
+    font-size: 20px;
+    color: rgb(82, 80, 80);
+    margin-top: 20px;
+    text-align: start;
+    font-weight: 600;
+    text-decoration: underline;
+}
+ .conditions_content .text p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    color: rgb(75, 75, 75);
+    margin-top: 20px;
+    /* margin-left: 40px; */
+    text-align: start;
+}
+ .conditions_content .text p span{
+    font-size: 16px;
+    font-weight: 600;
+}
+ .conditions_content .text p.line{
+    text-decoration: line-through;
+}
+
+
+@media (max-width:400px){
+  .condition .condition_text h1 {
+    font-size: 40px;
+  }
+  .condition .condition_text .anchor span, 
+  .condition .condition_text .anchor a {
+    font-size: 17px;
+  }
+  .condition::before {
+    height:286px;
+  }
+  .conditions_content .text p {
+    font-size: 16px;
+  }
+  .conditions_content .text p span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .conditions_content .text h2 {
+    font-size: 18px;
+  }
+}

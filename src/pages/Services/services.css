@@ -1,0 +1,141 @@
+.services{
+    width: 100%;
+    /* height: 400px; */
+    background-image: url("../../assets//hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 150px 0;
+}
+.services::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    z-index: 0;
+    opacity: 0.6;
+  }
+.services .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 5;
+}
+.services .text h1{
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.services .text span,
+.services .text a{
+    color: #fff;
+}
+.services .text a:hover{
+    text-decoration: underline;
+}
+
+.services_content{
+    padding: 50px 0;
+    /* background: #FFF8E8; */
+}
+.services_content .content h1{
+    font-size: 40px;
+    color: #0865DF;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.services_content .content p{
+    margin-top: 10px;
+    color: rgb(112, 112, 112);
+}
+
+
+/* technology_section CSS Start*/
+.technology_section {
+    width: 100%;
+    background: #fff;
+    padding: 80px 0;
+  }
+  .technology_section .technology_box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+  .technology_section .technology_box .box {
+    background: #fff;
+    box-shadow: -1px 5px 20px 0px #edeeef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .technology_section .technology_box .box:hover {
+    transform: scale(1.1);
+  }
+  .technology_section .technology_box .box .icon {
+    margin-bottom: 20px;
+  }
+  .technology_section .technology_box .box .icon img {
+    width: 77px;
+  }
+  .technology_section .technology_box .box .title h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .technology_section .technology_box .box .title h4 a {
+    color: #025add;
+    font-weight: 400;
+  }
+  .technology_section .technology_box .box .title p {
+    color: #3a3a3a;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  @media (max-width:768px){
+    .technology_section {
+      padding: 40px 0;
+    }
+    .services_content .content h1 {
+      font-size: 40px;
+      line-height: 25px;
+      margin-bottom: 20px;
+    }
+    .technology_section .technology_box {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width:568px){
+    .services_content .content h1 {
+      font-size: 30px;
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+    .technology_section .technology_box {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (max-width:400px){
+    .services_content .content h1 {
+      font-size: 25px;
+      line-height: 25px;
+    }
+    .services_content .content p {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+  
